@@ -1,0 +1,152 @@
+html{
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-family:  Arial, Helvetica, sans-serif;
+}
+body, .flex_parent li a{
+     color: #2d3c49;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid #7d97ad;
+    padding: 10px 0;
+}
+header, main{
+    width: 80%;
+    margin: 0 auto;
+}
+.logo_div img{
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin-top: 20px;
+}
+.title_div h1, .my_works h2{
+    font-weight: lighter;
+}
+.title_div h1, .flex_parent li h3{
+    font-family: 'Julius Sans One', Arial, Helvetica, sans-serif;
+}
+.title_div, .my_works h2{
+    text-transform: capitalize;
+}
+.title_div h1{
+    font-size: 250%;
+}
+.title_div p{
+    text-align: right;
+    margin-top: -20px;
+    font-size: 120%;
+}
+.photo_div, .photo_div picture img, .flex_parent li img{
+    width: 100%;
+}
+.photo_div {
+    margin: 20px 0;
+}
+.photo_div picture img{
+    height: 400px;
+}
+.my_works h2{
+    color: #7d97ad;
+    margin-left: 15px;
+}
+.my_works h2, .my_works h3{
+    font-size: 180%;
+}
+.flex_parent{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+}
+.flex_parent li{
+    width: 33%;
+    text-align: center;
+}
+.flex_parent li img{
+    height: 50%;
+}
+.flex_parent li h3{
+    text-transform: uppercase;
+    margin: 0;
+}
+.flex_parent li a{
+    text-decoration: none;
+}
+@media only screen and (max-width: 1075px){
+    header, main{
+        width: 85%;
+    }
+    .flex_parent li{
+        width: 48%;
+    }
+}
+@media only screen and (max-width: 769px) {
+    header, main{
+        width: 95%;
+    }
+    header{
+        padding: 0;
+    }
+    .logo_div img{
+        width: 60px;
+        height: 60px;
+        margin-top: 13px;
+    }
+    .title_div h1{
+        font-size: 200%;
+    }
+    .title_div p{
+        font-size: 100%;
+    }
+    .photo_div picture img{
+        height: 300px;
+    }
+    .flex_parent li{
+        width: 48%;
+    }
+    .flex_parent li h3{
+        font-size: 140%;
+        margin: 5px;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .logo_div img{
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+    }
+    .title_div h1{
+        font-size: 120%;
+    }
+    .title_div p{
+        font-size: 80%;
+        margin-top: -10px;
+    }
+    .photo_div picture img{
+        height: 180px;
+    }
+    .flex_parent{
+        justify-content: center;
+    }
+    .flex_parent li{
+        width: 80%;
+    }
+    .flex_parent li h3{
+        margin: 5px;
+    }
+    .my_works h2, .flex_parent li h3{
+        font-size: 130%;
+    }
+}
